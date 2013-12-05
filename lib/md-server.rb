@@ -42,3 +42,6 @@ get "*" do |path|
   end
 
 end
+
+###############
+# [todo] - 添加文件快速检索功能，类似 sublime 的 command+p panel
