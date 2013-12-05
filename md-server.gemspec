@@ -1,12 +1,10 @@
-# -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "md-server"
-  s.version     = HTTParty::VERSION
+  s.name        = "md-server2"
+  s.version     = "0.1.0"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["ChenCheng"]
-  s.email       = ["sorrycc@gmail.com"]
+  s.email       = "sorrycc@gmail.com"
   s.homepage    = "http://www.github.com/sorrycc/md-server"
   s.summary     = %q{Markdown Server.}
   s.description = %q{Markdown Server.}
@@ -19,7 +17,6 @@ Gem::Specification.new do |s|
   # s.add_dependency "optparse", ""
 
   s.files         = `git ls-files`.split("\n")
-  # s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 end
