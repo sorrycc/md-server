@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="/css/Clearness.css" />
+</head>
+<body>
+
+  <%= content %>
+
+  <script>
+    var h1El = document.getElementsByTagName("h1")[0];
+    if (h1El) {
+      document.title = h1El.innerHTML;
+    }
+  </script>
+  
+</body>
+</html>

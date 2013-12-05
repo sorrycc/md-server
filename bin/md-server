@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+require "optparse"
+
+$:.unshift(File.join(File.dirname(__FILE__), "/../lib"))
+require "md-server"
+
+opts = {
+  :port => 8000
+}
+
+OptionParser.new do |o|
+  o.banner = "USAGE: #{$0} [options]"
+
+  o.on("-p",
+       "--port [PORT]",
+       "HTTP port to start server, default is 8000.") do |p|
+    opts[:port] = p
+  end
+
+  o.on("-h", "--help", "Show help documentation") do |h|
+    puts o
+    exit
+  end
+end.parse!
+
+set :port, opts[:port]
+enable :run

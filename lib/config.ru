@@ -1,4 +1,4 @@
 
-require "./app"
+require "./md-server"
 run Sinatra::Application
 
