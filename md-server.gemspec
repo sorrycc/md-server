@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "md-server2"
-  s.version     = "0.1.1"
+  s.version     = "0.1.2"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["ChenCheng"]
   s.email       = "sorrycc@gmail.com"
