@@ -25,4 +25,5 @@ OptionParser.new do |o|
 end.parse!
 
 set :port, opts[:port]
+set :bind, '0.0.0.0'
 enable :run
