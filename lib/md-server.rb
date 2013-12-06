@@ -50,4 +50,3 @@ end
 
 ###############
 # [todo] - 添加文件快速检索功能，类似 sublime 的 command+p panel
-# [todo] - 添加 web hook 功能
