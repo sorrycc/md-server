@@ -2,13 +2,13 @@
 
 require "sinatra"
 require "sinatra/reloader" if development?
-require "markdown"
+require "github/markdown"
 
 DOC_PATH = Dir.pwd
 
 def get_html(path)
   content = File.read path
-  Markdown.new(content).to_html
+  GitHub::Markdown.render(content)
 end
 
 def get_path(path)
